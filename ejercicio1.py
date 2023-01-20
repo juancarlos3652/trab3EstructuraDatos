@@ -2,7 +2,7 @@
 cantidadA=int(input("Ingrese la cantidad de elemento que tendrá el conjunto A: "))
 conjuntoA=set()
 for i in range(cantidadA):
-    elementoA=input(f"ingrese elemento  N°{i+1} : ")  
+    elementoA=int(input(f"ingrese elemento  N°{i+1} : "))  
     conjuntoA.add(elementoA)
 cantidadB=int(input("Ingrese la cantidad de elemento que tendrá el conjunto B: "))
 conjuntoB=set()
@@ -14,7 +14,7 @@ def unionConjuntos(a,b):
 def interseccionConjuntos(a,b):
     return a.intersection(b)
 def diferenciaConjuntos(a,b):
-    return a.diferencia(b)
+    return a.difference(b)
 operacion= int(input("Indique que operacion desea \n[1] Unión \n[2] Intersección \n[3] Diferencia\n ->"))
 if operacion ==1:
     print("la union de los conjuntos es", unionConjuntos(conjuntoA,conjuntoB))
